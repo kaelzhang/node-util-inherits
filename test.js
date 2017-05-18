@@ -1,4 +1,4 @@
-const inherits = require('.')
+const inherits = require('./')
 const test = require('ava')
 
 

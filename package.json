@@ -2,7 +2,7 @@
   "name": "util-inherits",
   "version": "1.0.0",
   "description": "node util.inherits with compatibility",
-  "main": "lib/index.js",
+  "main": "index.js",
   "scripts": {
     "test": "node --harmony ./node_modules/.bin/ava --verbose --timeout=10s"
   },
@@ -39,7 +39,6 @@
   },
   "devDependencies": {
     "ava": "^0.16.0",
-    "babel-cli": "^6.16.0",
     "babel-plugin-transform-async-to-generator": "^6.22.0",
     "babel-plugin-syntax-trailing-function-commas": "^6.13.0",
     "babel-plugin-transform-class-properties": "^6.16.0",
