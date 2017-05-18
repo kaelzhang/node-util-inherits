@@ -1,7 +1,7 @@
 {
   "name": "util-inherits",
-  "version": "1.0.0",
-  "description": "node util.inherits with compatibility",
+  "version": "1.0.1",
+  "description": "util.inherits with compatibility",
   "main": "index.js",
   "scripts": {
     "test": "node --harmony ./node_modules/.bin/ava --verbose --timeout=10s"
