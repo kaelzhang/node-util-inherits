@@ -14,7 +14,12 @@
 
 # util-inherits
 
-util.inherits with compatibility. `util-inherits` will try use `Object.setPrototypeOf`, if `Object.setPrototypeOf` is not supported, then `Object.create`, or manipulate prototype.
+util.inherits with compatibility.
+
+`util-inherits` will try use `Object.setPrototypeOf`, if `Object.setPrototypeOf` is not supported, then `Object.create`, or manipulate prototype.
+
+- Browser friendly.
+- Does not rely on node utilities
 
 ## Install
 
