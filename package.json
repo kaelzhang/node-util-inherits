@@ -1,6 +1,6 @@
 {
   "name": "util.inherits",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "util.inherits with compatibility",
   "main": "index.js",
   "scripts": {

@@ -15,6 +15,7 @@ test('basic', t => {
 
   t.is(new B().a, 2, 'should abandon A.constructor')
   t.is(B.super_, A, 'super_')
+  t.is(new B().constructor, B, 'constructor')
 })
 
 
@@ -30,6 +31,7 @@ test('fake prototype', t => {
   inherits(B, A)
   t.is(new B().a, 2, 'inherits')
   t.is(B.super_, A, 'super_')
+  t.is(new B().constructor, B, 'constructor')
 })
 
 

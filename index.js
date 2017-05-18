@@ -1,10 +1,10 @@
-const inherits = Object.setPrototypeOf
+const inherits = typeof Object.setPrototypeOf === 'function'
   ? function (ctor, superCtor) {
     ctor.super_ = superCtor
     Object.setPrototypeOf(ctor.prototype, superCtor.prototype)
   }
 
-  : Object.create
+  : typeof Object.create === 'function'
     ? function (ctor, superCtor) {
       ctor.super_ = superCtor;
       ctor.prototype = Object.create(superCtor.prototype, {
@@ -22,6 +22,7 @@ const inherits = Object.setPrototypeOf
       function F () {}
       F.prototype = superCtor.prototype
       ctor.prototype = new F
+      ctor.prototype.constructor = ctor
     }
 
 
