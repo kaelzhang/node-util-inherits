@@ -19,13 +19,13 @@ util.inherits with compatibility. `util-inherits` will try use `Object.setProtot
 ## Install
 
 ```sh
-$ npm install util-inherits --save
+$ npm install util.inherits --save
 ```
 
 ## Usage
 
 ```js
-const inherits = require('util-inherits')
+const inherits = require('util.inherits')
 const {EventEmitter} = require('events')
 
 function MyClass () {
