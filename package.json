@@ -1,22 +1,24 @@
 {
   "name": "util-inherits",
   "version": "1.0.0",
-  "description": "util-inherits",
+  "description": "node util.inherits with compatibility",
   "main": "lib/index.js",
   "scripts": {
-    "build": "babel src --out-dir lib",
-    "test": "npm run build && node --harmony ./node_modules/.bin/ava --verbose --timeout=10s",
-    "prepublish": "npm run build"
+    "test": "node --harmony ./node_modules/.bin/ava --verbose --timeout=10s"
   },
   "files": [
-    "lib/"
+    "index.js"
   ],
   "repository": {
     "type": "git",
     "url": "git://github.com/kaelzhang/node-util-inherits.git"
   },
   "keywords": [
-    "util-inherits"
+    "util-inherits",
+    "inherits",
+    "class-extends",
+    "extend",
+    "legacy"
   ],
   "engines": {
     "node": ">=4"
@@ -32,7 +34,7 @@
       "babelrc": true
     },
     "files": [
-      "test/*.js"
+      "test.js"
     ]
   },
   "devDependencies": {
@@ -48,8 +50,5 @@
     "babel-plugin-transform-runtime": "^6.23.0",
     "babel-preset-es2015": "^6.16.0",
     "babel-register": "^6.24.1"
-  },
-  "dependencies": {
-    "babel-runtime": "^6.23.0"
   }
 }

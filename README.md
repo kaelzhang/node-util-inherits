@@ -14,7 +14,7 @@
 
 # util-inherits
 
-<!-- description -->
+node util.inherits with compatibility. `util-inherits` will try use `Object.setPrototypeOf`, if `Object.setPrototypeOf` is not supported, then `Object.create`, or manipulate prototype.
 
 ## Install
 
@@ -25,7 +25,14 @@ $ npm install util-inherits --save
 ## Usage
 
 ```js
-const util_inherits = require('util-inherits')
+const inherits = require('util-inherits')
+const {EventEmitter} = require('events')
+
+function MyClass () {
+  // code ...
+}
+
+inherits(MyClass, EventEmitter)
 ```
 
 ## License
